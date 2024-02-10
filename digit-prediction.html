@@ -359,15 +359,14 @@ display: none;
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>In this analysis, I will use a random forest algorithm to classify
-handwritten digits. The dataset comes from Kaggle’s <a href="https://www.kaggle.com/competitions/digit-recognizer/data">Digit
+<p>Computer vision is one of the hottest topics in machine learning. Training a computer to classify image data has massive implications, from document scanning to self-driving cars. Text recognition is a great introduction to the world of computer vision. In this analysis, I will use a random forest algorithm to classify handwritten digits. This can be a difficult task, because as any middle school teacher can tell you, deciphering handwriting is not always easy. Companies like Ancestry and FamilySearch frequently use text recognition algorithms to assist in digitally indexing historical records like census and immigration documents.</p>   
+<p>The dataset comes from Kaggle’s <a href="https://www.kaggle.com/competitions/digit-recognizer/data">Digit
 Recognizer competition</a>. Each digit is represented in its own row of
 data as a flattened 28 by 28 matrix of grayscale values (i.e., pixels).
 The first column of each dataset is the response variable (digit), and
 columns 2 through 785 are grayscale values ranging from 0 to 255. Values
 of 0 indicate white, and values of 255 indicate black, with grayscale
 integer values between.</p>
-<pre><code>## Warning: package &#39;lemon&#39; was built under R version 4.3.2</code></pre>
 <p>As an initial exploration of the data, I took the training data
 subsets of all the zeroes, twos and sevens. For each of these subsets, I
 averaged the pixel grayscale values and convert these averages into 28
@@ -476,8 +475,10 @@ due to computational and time limitations.</p>
 <p>I then retrained this model using the entire training set to generate
 predictions for Kaggle’s test set of 28,000 digits. This resulted in a
 test accuracy rate of 0.96735. For future modifications to improve the
-accuracy of my predictions, I will consider testing other models like
+accuracy of my predictions, I would consider testing other models like
 gradient boosting and neural networks.</p>
+<p>This same process could be applied to broader handwriting recognition problems, like those faced by FamilySearch. Of course, their algorithms also need to recognize printed and cursive text in addition to numbers. However, with sufficiently large training data, a random forest classification model could likely identify the text with high accuracy.
+  </p>
 </div>
 
 
