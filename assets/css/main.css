@@ -272,7 +272,7 @@ input, select, textarea {
 	}
 
 		hr.major {
-			margin: 5rem 0;
+			margin: 1rem 0;
 		}
 
 	.align-left {
@@ -2945,7 +2945,7 @@ input, select, textarea {
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 1rem 0;
 			text-align: center;
 		}
 
@@ -2960,7 +2960,7 @@ input, select, textarea {
 
 			header.major > .date {
 				font-size: 1rem;
-				margin: 0 0 4rem 0;
+				margin: 0 0 1rem 0;
 			}
 
 				header.major > .date:before, header.major > .date:after {
@@ -2991,7 +2991,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			header.major {
-				margin: 0 0 2rem 0;
+				margin: 0 0 1rem 0;
 			}
 
 		}
@@ -3779,7 +3779,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 1rem;
 		}
 
 			#main > .post header.major > .date {
@@ -3789,17 +3789,18 @@ input, select, textarea {
 			#main > .post header.major > h1, #main > .post header.major h2 {
 				font-size: 4rem;
 				line-height: 1.1;
-				margin: 0 0 2rem 0;
+				margin: 0 0 1rem 0;
 			}
 
 			#main > .post.featured {
 				text-align: center;
+				margin: 0;
 			}
 
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
-					padding: 6rem 4rem 4rem 4rem ;
+					padding: 1rem 1rem 1rem 1rem ;
 				}
 
 			}
@@ -3807,18 +3808,18 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+					padding: 1rem 1rem 1rem 1rem ;
 				}
 
 					#main > .post header.major > .date {
 						margin-top: -1rem;
-						margin-bottom: 2rem;
+						margin-bottom: 0;
 					}
 
 					#main > .post header.major > h1, #main > .post header.major h2 {
-						font-size: 2.5rem;
-						line-height: 1.2;
-						margin: 0 0 1.5rem 0;
+						font-size: 2rem;
+						line-height: 1;
+						margin: 0;
 					}
 
 			}
